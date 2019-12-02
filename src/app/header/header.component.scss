@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    background-color: #3C4146;
+    color: #ffffff;
+    flex-basis: 100%;
+    .github-logo {
+        flex-basis: 7%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 0.4rem;
+        height: 3.6rem;
+        .stick {
+            position: relative;
+            top: 52%;
+            right: 14%;
+        }
+    }
+    .github-text {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 7%;
+        align-items: flex-start;
+        .line1, .line2 {
+           margin: 0; 
+        }
+        .line1 {
+            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            margin-top: 0.3rem;
+        }
+        .line2 {
+            font-size: 0.9rem;
+            line-height: 1rem;
+            color: #B3BCC7;
+            margin-bottom: 0.6rem;
+        }
+    }
+    .empty-block {
+        flex-grow: 1;
+    }
+    .search-link, .mylist-link {
+        flex-basis: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

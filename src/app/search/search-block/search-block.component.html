@@ -1,0 +1,7 @@
+<div class="search-block">
+    <ng-template ngFor let-select [ngForOf]="selects">
+        <app-select (valueEmitter)="addOption($event)" [name]="select.name" [options]="select.options"></app-select>
+    </ng-template>
+    <app-input-text #text (textEmitter)="addText($event)"></app-input-text>
+    <app-button-search (clickEmitter)="sendRequest()"></app-button-search>
+</div>

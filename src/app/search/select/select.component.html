@@ -1,0 +1,4 @@
+<select (change)="selectValue([name, $event.target.value])" name="name">
+    <option disabled selected style='display:none;' >{{name}}</option>
+    <option *ngFor="let option of options" [value]="option">{{option}}</option>
+</select>

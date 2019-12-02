@@ -1,0 +1,12 @@
+.results {
+    display: flex;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+app-results-lines {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}

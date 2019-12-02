@@ -1,0 +1,46 @@
+.view-filter {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5rem 0;
+  }
+  
+  .squares,
+  .lines {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  
+  .squares::before {
+    display: block;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: #e0e0e0;
+    box-shadow: 1.1rem 0 #e0e0e0, 0 1.1rem #e0e0e0, 1.1rem 1.1rem #e0e0e0;
+  }
+  
+  .lines {
+    display: flex;
+    margin-left: 0.5rem;
+  }
+  
+  .lines::before {
+    display: block;
+    content: "";
+    background-color: #000000;
+    align-self: center;
+    width: 100%;
+    height: 0.2rem;
+    box-shadow: 0 0.95rem, 0 -0.95rem;
+  }
+  
+  .lines-grey::before {
+    background-color: #e0e0e0;
+    box-shadow: 0 0.95rem #e0e0e0, 0 -0.95rem #e0e0e0;
+  }
+  
+  .squares-black::before {
+    background-color: #000000;
+    box-shadow: 1.1rem 0, 0 1.1rem, 1.1rem 1.1rem;
+  }

@@ -1,0 +1,13 @@
+.search-block {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    app-select {
+        flex-basis: 22%;
+    }
+
+    app-input-text {
+        flex-basis: 32%;
+    }
+}

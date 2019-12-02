@@ -1,0 +1,17 @@
+<app-view-filter></app-view-filter>
+
+<div class="grid-results">
+    <div *ngFor="let item of this.request.list"  class="repo-item">
+            <div class="column-second">
+                <p class="repo-name">{{item.name}}</p>
+                <p class="repo-description">Platform for professional publishers</p>
+                <p class="repo-lang">{{item.lang}}</p>
+                <p class="repo-text">{{item.text}}</p>
+                <button class="add-remove">Add</button>
+            </div>
+            <div class="column-third">
+                <p class="stars-count">{{item.stars}}</p>
+                <p class="repo-lang__last">{{item.lang}}</p>
+            </div>
+        </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="results" *ngIf="this.request.list.length; else elseBlock">
+    <app-view-filter></app-view-filter>
+    <app-results-lines></app-results-lines>
+</div>
+
+<ng-template #elseBlock>
+    <app-noresults></app-noresults>
+</ng-template>
