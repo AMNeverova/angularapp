@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RequestService } from '../request.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { RequestService } from '../request.service';
   templateUrl: './search-block.component.html',
   styleUrls: ['./search-block.component.scss'],
 })
-export class SearchBlockComponent implements OnInit {
+export class SearchBlockComponent {
   private selects: Array<Object> = [{
     name: 'Type',
     options: ['repositories', 'commits', 'code', 'issues', 'users', 'topics', 'labels']
@@ -32,8 +32,4 @@ export class SearchBlockComponent implements OnInit {
     this.request.getRepos(this.type, this.language, this.text)
   }
   constructor( private request: RequestService) { }
-
-  ngOnInit() {
-  }
-
 }

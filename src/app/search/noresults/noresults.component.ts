@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-noresults',
   templateUrl: './noresults.component.html',
   styleUrls: ['./noresults.component.scss']
 })
-export class NoresultsComponent implements OnInit {
+export class NoresultsComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }

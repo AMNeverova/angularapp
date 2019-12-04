@@ -46,5 +46,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #B3BCC7;
+    }
+
+    .search-link:focus, .mylist-link:focus {
+        outline: none;
+    }
+
+    .active {
+        color: #ffffff;
     }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RequestService } from '../request.service';
 
 @Component({
@@ -6,11 +6,11 @@ import { RequestService } from '../request.service';
   templateUrl: './grid-list.component.html',
   styleUrls: ['./grid-list.component.scss']
 })
-export class GridListComponent implements OnInit {
+export class GridListComponent {
+
+  public squaresColor : string = 'squares-black';
+  public linesColor : string = 'lines-grey';
+  @Input() arrayToRender: object[];
 
   constructor(private request: RequestService) { }
-
-  ngOnInit() {
-  }
-
 }

@@ -1,8 +1,6 @@
-<div class="results" *ngIf="this.request.list.length; else elseBlock">
+<div class="results-block" [ngSwitch]="this.request.displayType">
     <app-view-filter></app-view-filter>
-    <app-results-lines></app-results-lines>
+    <app-results-lines *ngSwitchCase="'rows'" [arrayToRender]="this.request.list"></app-results-lines>
+    <app-grid-list *ngSwitchCase="'grid'" [arrayToRender]="this.request.list"></app-grid-list>
+    <app-noresults *ngSwitchCase="'no-items'"></app-noresults>
 </div>
-
-<ng-template #elseBlock>
-    <app-noresults></app-noresults>
-</ng-template>

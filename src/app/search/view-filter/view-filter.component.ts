@@ -1,24 +1,31 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component } from '@angular/core';
+import { RequestService } from '../request.service';
 
 @Component({
   selector: 'app-view-filter',
   templateUrl: './view-filter.component.html',
   styleUrls: ['./view-filter.component.scss']
 })
-export class ViewFilterComponent implements OnInit {
+export class ViewFilterComponent {
+  public rowsColor: string = 'rows-black';
+  public gridColor: string = 'grid-grey';
 
-  handleSquaresClick() {
-    this.router.navigate(['search/grid-list'])
+  toggleItemColor(clickedItem: string) {
+    if (clickedItem === 'rows') {
+      this.rowsColor = 'rows-black';
+      this.gridColor = 'grid-grey';
+    } else {
+      this.gridColor = 'grid-black';
+      this.rowsColor = 'rows-grey';
+    }
+
   }
 
-  handleLinesClick() {
-    this.router.navigate(['search/rows-list'])
+  handleClick(evt) {
+    let type = evt.target.classList[0];
+    this.request.displayType = type;
+    this.toggleItemColor(type);
   }
 
-  constructor(private router: Router) { }
-
-  ngOnInit() {
-  }
-
+  constructor(private request: RequestService) { }
 }

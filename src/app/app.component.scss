@@ -1,24 +1,25 @@
 .container {
-    margin-top: calc(50vh - 270px);
-    min-height: 540px;
-    width: 1200px;
-    background-color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    app-footer, app-header {
-        flex-basis: 100%;
-    }
-    app-footer {
-        align-self: flex-end;
-    }  
+  margin-top: calc(50vh - 270px);
+  min-height: 540px;
+  width: 1200px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  app-footer,
+  app-header {
+    flex-basis: 100%;
+  }
+  app-footer {
+    align-self: flex-end;
+  }
 }
-        app-search-and-results {
-            align-self: flex-start;
-            background-color: aqua;
-        }  
-    
-        app-my-list {
-            flex-basis: 80%;
-        }
+app-search-and-results {
+  align-self: flex-start;
+  background-color: aqua;
+}
+
+app-my-list {
+  flex-basis: 80%;
+}

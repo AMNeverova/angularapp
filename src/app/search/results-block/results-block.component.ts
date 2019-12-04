@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RequestService } from '../request.service';
 
 @Component({
@@ -6,11 +6,7 @@ import { RequestService } from '../request.service';
   templateUrl: './results-block.component.html',
   styleUrls: ['./results-block.component.scss']
 })
-export class ResultsBlockComponent implements OnInit {
+export class ResultsBlockComponent {
 
   constructor(private request: RequestService) { }
-
-  ngOnInit() {
-  }
-
 }

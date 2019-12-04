@@ -1,4 +1,4 @@
-<div class="view-filter">
-    <div class="squares" (click)="handleSquaresClick()"></div>
-    <div class="lines" (click)="handleLinesClick()"></div>
+<div class="view-filter" *appShowViewFilter="this.request.showViewFilter">
+    <div [class]="'grid ' + gridColor" (click)="handleClick($event)"></div>
+    <div [class]="'rows ' + rowsColor" (click)="handleClick($event)"></div>
 </div>

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ResultLinesComponent } from './results-lines.component';
+import { RowsListComponent } from './rows-list.component';
 
-describe('ResultLinesComponent', () => {
-  let component: ResultLinesComponent;
-  let fixture: ComponentFixture<ResultLinesComponent>;
+describe('RowsListComponent', () => {
+  let component: RowsListComponent;
+  let fixture: ComponentFixture<RowsListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResultLinesComponent ]
+      declarations: [ RowsListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ResultLinesComponent);
+    fixture = TestBed.createComponent(RowsListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

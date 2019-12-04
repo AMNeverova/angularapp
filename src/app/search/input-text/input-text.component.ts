@@ -1,11 +1,11 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-input-text',
   templateUrl: './input-text.component.html',
   styleUrls: ['./input-text.component.scss']
 })
-export class InputTextComponent implements OnInit {
+export class InputTextComponent {
   @Output() private textEmitter = new EventEmitter();
 
   sendText(text: string) {
@@ -13,8 +13,4 @@ export class InputTextComponent implements OnInit {
   }
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }
