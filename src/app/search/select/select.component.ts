@@ -6,9 +6,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./select.component.scss']
 })
 export class SelectComponent {
-  @Input() private name: string;
-  @Input() private options: string[];
-  @Output() private valueEmitter = new EventEmitter();
+  @Input() public name: string;
+  @Input() public options: string[];
+  @Output() public valueEmitter = new EventEmitter();
   selectValue(event) {
     this.valueEmitter.emit(event);
   }

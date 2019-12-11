@@ -7,7 +7,7 @@ import { RequestService } from '../request.service';
   styleUrls: ['./search-block.component.scss'],
 })
 export class SearchBlockComponent {
-  private selects: Array<Object> = [{
+  public selects: Array<Object> = [{
     name: 'Type',
     options: ['repositories', 'commits', 'code', 'issues', 'users', 'topics', 'labels']
   }, {

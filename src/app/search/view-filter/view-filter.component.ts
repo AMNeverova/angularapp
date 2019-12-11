@@ -27,5 +27,5 @@ export class ViewFilterComponent {
     this.toggleItemColor(type);
   }
 
-  constructor(private request: RequestService) { }
+  constructor(public request: RequestService) { }
 }

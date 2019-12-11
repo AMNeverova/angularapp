@@ -8,5 +8,5 @@ import { RequestService } from '../request.service';
 })
 export class ResultsBlockComponent {
 
-  constructor(private request: RequestService) { }
+  constructor(public request: RequestService) { }
 }

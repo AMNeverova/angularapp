@@ -13,6 +13,6 @@ export class RowsListComponent {
   @Input() arrayToRender: object[];
   @Input() isChecked: boolean;
 
-  constructor(private request: RequestService) {
+  constructor(public request: RequestService) {
    }
 }

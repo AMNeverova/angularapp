@@ -7,5 +7,5 @@ import { RequestService } from '../search/request.service';
   styleUrls: ['./my-list.component.scss']
 })
 export class MyListComponent {
-  constructor(private request: RequestService) { }
+  constructor(public request: RequestService) { }
 }

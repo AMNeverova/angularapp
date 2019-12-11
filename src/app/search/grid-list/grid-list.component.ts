@@ -12,5 +12,5 @@ export class GridListComponent {
   public linesColor : string = 'lines-grey';
   @Input() arrayToRender: object[];
 
-  constructor(private request: RequestService) { }
+  constructor(public request: RequestService) { }
 }
